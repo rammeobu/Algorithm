@@ -2,7 +2,6 @@
 #include <math.h>
 int main() {
 	int N,M,cnt=0;
-	int iarray[11] = { 0 };
 	scanf("%d %d", &N,&M);
 	for (int i = N; i <= M; i++) {
 		int su = sqrt((float)N);
@@ -14,14 +13,12 @@ int main() {
 			if (N % i == 0) {
 				cnt++;
 			}
-
 		}
 		if (cnt <= 0) {
 			printf("%d\n", N);
 			cnt = 0;
 		}
-		else
-		{
+		else{
 			cnt = 0;
 		}
 		N++;
